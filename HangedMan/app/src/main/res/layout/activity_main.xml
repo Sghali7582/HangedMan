@@ -5,114 +5,124 @@
         xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent" android:layout_gravity="center">
-    <Space
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="24dp" android:id="@+id/space1" android:layout_gravity="center"/>
-    <TextView
-            android:text="@string/category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/category" android:gravity="center"
-            android:layout_gravity="center"/>
-    <Space
-            android:layout_width="match_parent"
-            android:layout_height="24dp" android:id="@+id/space2" android:layout_gravity="center"/>
-    <ImageView
-            android:layout_width="205dp"
-            android:layout_height="234dp" app:srcCompat="@drawable/hangedman_0" android:id="@+id/hangedMan"
-            android:layout_gravity="center" tools:ignore="ContentDescription"/>
-    <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp" android:id="@+id/space3" android:layout_gravity="center"/>
-    <TextView
-            android:text="@string/hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/hint" android:gravity="center"
-            android:layout_gravity="center"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="@string/letter"
-            android:ems="10"
-            android:id="@+id/letter" android:gravity="center" android:layout_gravity="center"
-            android:autofillHints="@string/letter" tools:ignore="LabelFor"/>
-    <Space
-            android:layout_width="wrap_content"
-            android:layout_height="15dp" android:id="@+id/space4" android:layout_gravity="center"/>
-    <Space
-            android:layout_width="wrap_content"
-            android:layout_height="30dp" android:id="@+id/space5" android:layout_gravity="center"/>
-    <TextView
-            android:text="@string/categoryInstr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/selectCategory" android:gravity="center"
-            android:layout_gravity="center"/>
-    <Space
-            android:layout_width="wrap_content"
-            android:layout_height="12dp" android:id="@+id/space6" android:layout_gravity="center"/>
-    <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:gravity="center">
+            android:layout_height="match_parent" tools:ignore="UselessParent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" android:id="@+id/space1" android:layout_gravity="center"/>
+        <TextView
+                android:text="@string/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/category" android:gravity="center"
+                android:layout_gravity="center"/>
+        <TextView
+                android:text="@string/spaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:gravity="center"/>
+        <ImageView
+                android:layout_width="205dp"
+                android:layout_height="234dp" app:srcCompat="@drawable/hangedman_0" android:id="@+id/hangedMan"
+                android:layout_gravity="center" tools:ignore="ContentDescription"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" android:id="@+id/space2" android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/adivinar" android:gravity="center"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" android:id="@+id/space3" android:layout_gravity="center"/>
+        <TextView
+                android:text="@string/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/hint" android:gravity="center"
+                android:layout_gravity="center"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/letter" android:gravity="center" android:layout_gravity="center"
+                android:autofillHints="@string/letter" tools:ignore="LabelFor"/>
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" android:id="@+id/space4" android:layout_gravity="center"/>
+        <TextView
+                android:text="@string/categoryInstr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/selectCategory" android:gravity="center"
+                android:layout_gravity="center"/>
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" android:id="@+id/space6" android:layout_gravity="center"/>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="center">
 
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/colors"
-                    android:layout_height="wrap_content" android:id="@+id/cat1" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/animals"
-                    android:layout_height="wrap_content" android:id="@+id/cat2" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/houseItems"
-                    android:layout_height="wrap_content" android:id="@+id/cat3" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/clothes"
-                    android:layout_height="wrap_content" android:id="@+id/cat4" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/kitchen"
-                    android:layout_height="wrap_content" android:id="@+id/cat5" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/lettuce"
-                    android:layout_height="wrap_content" android:id="@+id/cat6" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/trasport"
-                    android:layout_height="wrap_content" android:id="@+id/cat7" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/europe"
-                    android:layout_height="wrap_content" android:id="@+id/cat8" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/america"
-                    android:layout_height="wrap_content" android:id="@+id/cat9" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:text="@string/disney"
-                    android:layout_height="wrap_content" android:id="@+id/cat10" android:gravity="center"
-                    style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
-    </TableLayout>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/colors"
+                        android:layout_height="wrap_content" android:id="@+id/cat1" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/animals"
+                        android:layout_height="wrap_content" android:id="@+id/cat2" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/houseItems"
+                        android:layout_height="wrap_content" android:id="@+id/cat3" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/clothes"
+                        android:layout_height="wrap_content" android:id="@+id/cat4" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/kitchen"
+                        android:layout_height="wrap_content" android:id="@+id/cat5" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/lettuce"
+                        android:layout_height="wrap_content" android:id="@+id/cat6" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/trasport"
+                        android:layout_height="wrap_content" android:id="@+id/cat7" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/europe"
+                        android:layout_height="wrap_content" android:id="@+id/cat8" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/america"
+                        android:layout_height="wrap_content" android:id="@+id/cat9" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:text="@string/disney"
+                        android:layout_height="wrap_content" android:id="@+id/cat10" android:gravity="center"
+                        style="?android:attr/buttonBarButtonStyle"/>
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -14,4 +14,5 @@
     <string name="europe">Países de Europa</string>
     <string name="america">Países de América</string>
     <string name="disney">Películas de Disney</string>
+    <string name="spaces">NOTA: Si requieres poner un espacio, utiliza un punto para indicarlo</string>
 </resources>
