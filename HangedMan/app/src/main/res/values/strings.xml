@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">HangedMan</string>
+    <string name="categoryInstr">Selecciona una categoría</string>
+    <string name="letter">Letra</string>
+    <string name="hint">Pista</string>
+    <string name="category">Categoría</string>
+    <string name="colors">Colores</string>
+    <string name="animals">Animales</string>
+    <string name="houseItems">Muebles de casa</string>
+    <string name="clothes">Prendas de vestir</string>
+    <string name="kitchen">Objetos de cocina</string>
+    <string name="lettuce">Frutas y verduras</string>
+    <string name="trasport">Medios de transporte</string>
+    <string name="europe">Países de Europa</string>
+    <string name="america">Países de América</string>
+    <string name="disney">Películas de Disney</string>
 </resources>
